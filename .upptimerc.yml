@@ -2,12 +2,74 @@ owner: Nbetray
 repo: status
 
 sites:
+  - name: 源站
+    url: https://www.host.nbetray.cn/
+    # The origin deliberately rejects requests without X-Origin-Token.
+    # This checks the authentication boundary, not protected page content.
+    expectedStatusCodes: [403]
+
+  - name: Live 2d
+    url: https://live2d.nbetray.cn/readyz
+
   - name: 主站
-    url: https://www.nbetray.cn
+    url: https://www.nbetray.cn/
+
+  - name: Hook Forward
+    url: https://hookforward.nbetray.cn/healthz
+
+  - name: Sub Converter
+    url: https://subconverter.nbetray.cn/version
+
+  - name: Minio
+    url: https://minio.nbetray.cn/minio/health/live
+
+  - name: Headlamp
+    url: https://headlamp.nbetray.cn/
+
+  - name: Prometheus
+    url: https://prometheus.nbetray.cn/-/ready
+
   - name: Grafana
     url: https://grafana.nbetray.cn/api/health
-  - name: MinIO
-    url: https://minio.nbetray.cn/minio/health/live
+
+  - name: Jmcomic Syncer API
+    url: https://jmcomic-syncer.nbetray.cn/
+    # The public web entry requires authentication.
+    expectedStatusCodes: [401]
+
+  - name: Muscriptor
+    url: https://muscriptor.nbetray.cn/
+
+  - name: Static Page
+    url: https://staticpage.nbetray.cn/
+
+  - name: Portal
+    url: https://portal.nbetray.cn/
+
+  - name: File
+    url: https://file.nbetray.cn/
+    # The private COS bucket does not allow anonymous root access.
+    expectedStatusCodes: [403]
+
+  - name: 3X UI
+    url: https://3xui.nbetray.cn/
+
+  - name: Minio Browser
+    url: https://browser.minio.nbetray.cn/
+
+  - name: Harbor.nbetray.cn
+    url: https://harbor.nbetray.cn/api/v2.0/health
+
+  - name: Frp
+    url: https://frp.nbetray.cn/
+    # The dashboard requires HTTP Basic authentication.
+    expectedStatusCodes: [401]
+
+  - name: API
+    url: https://api.nbetray.cn/poetize/webInfo/getWebInfo
+
+  - name: All In SSL
+    url: https://allinssl.nbetray.cn/login
 
 status-website:
   cname: status.nbetray.cn
