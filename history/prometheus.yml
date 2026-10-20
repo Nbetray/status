@@ -1,7 +1,7 @@
 url: https://prometheus.nbetray.cn/-/ready
-status: up
-code: 200
-responseTime: 990
-lastUpdated: 2026-10-20T01:28:24.873Z
+status: down
+code: 504
+responseTime: 18095
+lastUpdated: 2026-10-20T19:42:09.189Z
 startTime: 2026-10-17T22:44:00.880Z
 generator: Upptime <https://github.com/upptime/upptime>
