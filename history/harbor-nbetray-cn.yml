@@ -1,7 +1,7 @@
 url: https://harbor.nbetray.cn/api/v2.0/health
 status: up
 code: 200
-responseTime: 612
-lastUpdated: 2026-11-04T02:53:00.213Z
+responseTime: 2068
+lastUpdated: 2026-11-05T03:02:58.110Z
 startTime: 2026-10-17T22:44:08.214Z
 generator: Upptime <https://github.com/upptime/upptime>
