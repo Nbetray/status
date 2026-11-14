@@ -1,7 +1,7 @@
 url: https://minio.nbetray.cn/minio/health/live
 status: up
 code: 200
-responseTime: 418
-lastUpdated: 2026-11-13T03:06:00.265Z
+responseTime: 503
+lastUpdated: 2026-11-14T02:52:18.881Z
 startTime: 2026-10-17T22:43:59.316Z
 generator: Upptime <https://github.com/upptime/upptime>
