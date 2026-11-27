@@ -1,7 +1,7 @@
 url: https://grafana.nbetray.cn/api/health
 status: up
 code: 200
-responseTime: 903
-lastUpdated: 2026-11-26T04:39:18.407Z
+responseTime: 826
+lastUpdated: 2026-11-27T04:44:03.619Z
 startTime: 2026-10-17T22:23:25.816Z
 generator: Upptime <https://github.com/upptime/upptime>
